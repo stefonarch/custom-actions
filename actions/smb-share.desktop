@@ -1,0 +1,21 @@
+[Desktop Entry]
+
+Type=Action
+
+Icon=document-share
+
+Name=Condividi cartella con Samba
+
+Profiles=profile-zero;
+
+
+
+[X-Action-Profile profile-zero]
+
+SelectionCount==1
+
+MimeTypes=inode/directory;
+
+#Exec=net usershare add %w %f '' Everyone:R guest_ok=y' 
+Exec=/home/stef/bin/foldershare %w %f
+

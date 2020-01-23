@@ -1,0 +1,39 @@
+[Desktop Entry]
+Type=Action
+Name=Attach to Thunderbird Mail
+Name[it]=Allega a email con Thunderbird
+Name[es]=Enviar adjunto con Thunderbird
+Name[de]=Als Anhang mit Thunderbird verschicken
+Name[pt]=Anexar ao Thunderbird E-mail
+Name[pt_BR]=Enviar arquivo(s) como anexo(s)
+Name[fr]=Envoyer avec Thunderbird
+Name[nl]=Voeg toe als bijlage aan Thunderbird
+Name[pl]=Wyślij jako załącznik Thunderbirda
+Name[ru]=Отправить с помощью Thunderbird
+Name[cz]=Odeslat jako přílohu Thunderbirdem
+
+# For 64 bit systems use:
+Icon=thunderbird
+#Icon=/usr/lib64/thunderbird-3.0.7/chrome/icons/default/default16.png
+
+# For 32 bit systems use: 
+#Icon=/usr/lib/thunderbird/chrome/icons/default/default16.png
+
+Profiles=profile-zero;
+[X-Action-Profile profile-zero]
+# This one works for some systems (don't know exactly why). 
+# Exec=thunderbird -compose "attachment='file:///$(echo %F | sed 's/\\ \\//,file:\\/\\//g')'"
+#Exec=thunderbird -compose "attachment='file://$(echo %F | sed 's/\\ \\//,file:\\/\\//g')'"
+ 
+
+# This one worked well for a Gentoo user
+#Exec=thunderbird -compose \"attachment=\'file://`echo %F | sed \'s/\\\\ \\\\//,file:\\\\/\\\\/\\\\//g\'`\'\"
+ 
+# This one was tested for Mandriva 2011 and LinuxMint Olivia:  
+#Exec=thunderbird -compose "attachment='$(echo %F | sed 's/\\ \\//,\\/\\//g')'"
+#This one works on arch 
+Exec=thunderbird -compose "attachment='file://%U'"
+Name=Default profile
+
+
+

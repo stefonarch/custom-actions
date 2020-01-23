@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Modifica come root
+Icon=dialog-password
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=text/plain;
+Exec=lxsudo juffed %f
+Name=Default profile

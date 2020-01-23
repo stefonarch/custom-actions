@@ -1,0 +1,35 @@
+#!/bin/bash
+# To set this up, first set up your smb.conf by adding to the [global] section the following lines:
+#
+# usershare path = /usr/local/samba/lib/usershares 
+# usershare max shares = 100
+# usershare allow guests = yes
+# 
+# Create the directory /usr/local/samba/lib/usershares, change the owner to root and set the group owner to the UNIX group who should have the ability to create usershares, for example a group called "serverops". Set the permissions on /usr/local/samba/lib/usershares to 01770. (Owner and group all access, no access for others, plus the sticky bit, which means that a file in that directory can be renamed or deleted only by the owner of the file). 
+#
+# Make sure libnotify  and xautomation (for refresh folder) is installed
+
+emblem_name="folder-publicshare" # change this to your emblem name for shared folders
+FOLDER=/usr/local/samba/lib/usershares/$1
+#transform to lowercase, otherwise the check fails if uppercase is present in foldername.
+FILE=$(echo "${FOLDER,,}")
+
+if test -f "$FILE"; then
+	notify-send -i dialog-warning -a Samba "Folder '$1' is already shared!"
+	exit 0
+else
+	net usershare add $1 $2 '' Everyone:R guest_ok=y
+fi
+#check if share exists
+
+if test -f "$FILE"; then
+	notify-send -i emblem-success -a Samba "Folder '$1' succesfully shared"
+	for arg in "$@"; do
+	gio set "$arg" -t stringv metadata::emblems "$emblem_name"
+	xte 'key F5'
+done
+#Note: folders that  have the same name as a system user cannot be shared with their name
+else
+	notify-send -i dialog-warning -a Samba "Sharing folder '$1' failed! Please check your configuration."
+fi
+

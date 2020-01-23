@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Action
+Name=Empty Trash
+Icon=user-trash-full
+MimeTypes=desktop entry files
+Profiles=profile-zero;
+[X-Action-Profile profile-zero]
+Exec=gvfs-rm trash:///*

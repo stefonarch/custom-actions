@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Modifica tag mp3
+Icon=kid3-qt
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=audio/*;
+Exec=kid3-qt %F
+Name=Default profile

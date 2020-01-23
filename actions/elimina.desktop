@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Elimina
+Icon=xterm
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=*
+Exec=rm -f %f
+Name=Default profile

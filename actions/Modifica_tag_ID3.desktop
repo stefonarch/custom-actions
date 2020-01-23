@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+Name=Converti con soundKonverter
+Icon=soundkonverter
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=audio/*;
+Exec=soundkonverter %F
+Name=Default profile

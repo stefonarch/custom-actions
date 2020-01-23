@@ -1,0 +1,11 @@
+	[Desktop Entry]
+Type=Action
+Name=Usa come sfondo
+Icon=user-desktop
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=image/*;
+Exec=pcmanfm-qt -w %f
+Name=Default profile
+SelectionCount==1
