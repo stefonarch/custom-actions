@@ -26,6 +26,7 @@ Name[sr]=Отвори као текст
 Name[sr@latin]=Otvori kao tekst
 Name[sv]=Redigera 
 
+MimeTypes=text/plain;
 Profiles=profile-zero;
 [X-Action-Profile profile-zero]
 Exec=featherpad %F

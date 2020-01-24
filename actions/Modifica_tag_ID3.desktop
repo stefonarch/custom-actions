@@ -1,6 +1,16 @@
 [Desktop Entry]
 Type=Action
-Name=Converti con soundKonverter
+Name=Convert with SoundKonverter
+Name[it]=Converti con SoundKonverter
+Name[es]=Convierte con SoundKonverter
+Name[de]=Mit SoundKonverter konvertieren
+Name[pt]=Converta com SoundKonverter
+Name[fr]=Convertir avec SoundKonverter
+Name[nl]=Converteer met SoundKonverter
+Name[pl]=Konwertuj za pomocą SoundKonverter
+Name[ru]=Конвертировать с помощью SoundKonverter
+Name[cz]=Převést pomocí SoundKonverter
+
 Icon=soundkonverter
 Profiles=profile-zero;
 

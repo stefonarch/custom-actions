@@ -1,21 +1,28 @@
 [Desktop Entry]
 
 Type=Action
+Name=Share folder with Samba
+Name[it]=Condividi cartella con Samba
+Name[es]=Compartir carpeta con Samba
+Name[de]=Ordner mit Samba teilen
+Name[pt]=Compartilhar pasta com o Samba
+Name[fr]=Partager le dossier avec Samba
+Name[nl]=Map delen met Samba
+Name[pl]=Udostępnij folder Sambie
+Name[ru]=Поделиться папкой с Samba
+Name[cz]=Sdílejte složku se Samba
 
 Icon=document-share
 
-Name=Condividi cartella con Samba
-
 Profiles=profile-zero;
-
-
 
 [X-Action-Profile profile-zero]
 
 SelectionCount==1
 
 MimeTypes=inode/directory;
-
+# Uncomment the  first line below for simple use or the second one for using with the 
+# foldershare script; edit path correctly!
 #Exec=net usershare add %w %f '' Everyone:R guest_ok=y' 
-Exec=/home/stef/bin/foldershare %w %f
+#Exec=/path/to/foldershare %w %f
 

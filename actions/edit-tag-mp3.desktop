@@ -1,6 +1,17 @@
 [Desktop Entry]
 Type=Action
-Name=Modifica tag mp3
+
+Name=Modify mp3 tags
+Name[it]=Modifica tag mp3
+Name[es]=Modificar etiquetas mp3
+Name[de]=MP3-Tags ändern
+Name[pt]=Modificar tags mp3
+Name[fr]=Modifier les balises mp3
+Name[nl]=Wijzig mp3-tags
+Name[pl]=Zmodyfikuj tagi mp3
+Name[ru]=Изменить mp3 теги
+Name[cz]=Upravit mp3 značky
+
 Icon=kid3-qt
 Profiles=profile-zero;
 
