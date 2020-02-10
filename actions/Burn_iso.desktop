@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Action
+Name=Burn Image
+Name[it]=Masterizza con K3b
+Name[es]=Convierte con SoundKonverter
+Name[de]=Mit SoundKonverter konvertieren
+Name[pt]=Converta com SoundKonverter
+Name[fr]=Convertir avec SoundKonverter
+Name[nl]=Converteer met SoundKonverter
+Name[pl]=Konwertuj za pomocą SoundKonverter
+Name[ru]=Конвертировать с помощью SoundKonverter
+Name[cz]=Převést pomocí SoundKonverter
+
+Icon=k3b
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/x-cd-image;application/x-raw-disk-image;
+Exec=k3b --cdimage %f
+Name=Default profile

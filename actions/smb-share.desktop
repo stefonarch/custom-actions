@@ -26,3 +26,4 @@ MimeTypes=inode/directory;
 #Exec=net usershare add %w %f '' Everyone:R guest_ok=y' 
 #Exec=/path/to/foldershare %w %f
 
+

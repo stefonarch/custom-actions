@@ -1,0 +1,3 @@
+#!/bin/bash
+fuseiso -p $2 $3/iso_mount
+notify-send -a Isomount -i application-x-cd-image "$1.iso mounted in $3/iso_mount"

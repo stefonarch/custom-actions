@@ -1,0 +1,19 @@
+	[Desktop Entry]
+Type=Action
+Name=Resize pdf
+Name[it]=Riduci dimensione
+Name[es]=Redimensionar pdf
+Name[de]=Größe reduzieren
+Name[pt]=Redimensionar pdf
+Name[fr]=Redimensionner le pdf
+Name[pl]=Zmień rozmiar pdf
+Name[ru]=Изменить размер
+Name[cz]=Změnit velikost pdf
+Icon=application-pdf
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/pdf;
+Exec=resize_pdf %f
+Name=Default profile
+SelectionCount==1

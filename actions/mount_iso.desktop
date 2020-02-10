@@ -1,0 +1,19 @@
+[Desktop Entry]
+Type=Action
+Name=Mount iso file
+Name[it]=Monta immagine iso
+Name[es]=Montar archivo iso
+Name[de]=ISO-Datei einhängen
+Name[pt]=Montar arquivo iso
+Name[fr]=Monter le fichier ISO
+Name[pl]=Zamontuj plik ISO
+Name[ru]=Смонтировать iso файл
+Name[cz]=Připojte soubor iso
+
+Icon=application-x-cd-image
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=application/x-cd-image;application/x-raw-disk-image;
+Exec=/home/stef/bin/fuseisomount %w %f %d
+Name=Default profile

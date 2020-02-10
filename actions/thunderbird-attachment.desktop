@@ -8,7 +8,7 @@ Name[pt]=Anexar ao Thunderbird E-mail
 Name[pt_BR]=Enviar arquivo(s) como anexo(s)
 Name[fr]=Envoyer avec Thunderbird
 Name[nl]=Voeg toe als bijlage aan Thunderbird
-Name[pl]=Wyślij jako załącznik Thunderbirda
+Name[pl]=Wyślij jako załącznik Thunderbird
 Name[ru]=Отправить с помощью Thunderbird
 Name[cz]=Odeslat jako přílohu Thunderbirdem
 
@@ -32,6 +32,7 @@ Profiles=profile-zero;
 # This one was tested for Mandriva 2011 and LinuxMint Olivia:  
 #Exec=thunderbird -compose "attachment='$(echo %F | sed 's/\\ \\//,\\/\\//g')'"
 #This one works on arch 
+MimeTypes=text/*;audio/*;image/*;application/*;
 Exec=thunderbird -compose "attachment='file://%U'"
 Name=Default profile
 

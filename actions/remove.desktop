@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Action
+Name=Delete
+Name[it]=Elimina
+Name[es]=Eliminar
+Name[de]=Löschen
+Name[pt]=Excluir
+Name[fr]=Supprimer
+Name[pl]=Usunąć
+Name[ru]=удалять
+Name[cz]=Odstranit
+
+Icon=emblem-remove
+
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=MimeTypes=text/*;audio/*;image/*;application/*;video/*
+Exec=rm -f %f
+Name=Default profile
