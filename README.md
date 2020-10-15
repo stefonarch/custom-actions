@@ -1,6 +1,6 @@
 # Custom actions for Pcmanfm-qt and LXQt Desktop
 
-Custom actions are shown in tehe context menu (right click) for corresponding Mime-types.
+Custom actions are shown in the context menu (right click) for corresponding Mime-types.
 Following actions are present:
 
 ![Screenshot](https://github.com/stefonarch/custom-actions/raw/master/Overview.png)
