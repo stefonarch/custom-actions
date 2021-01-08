@@ -15,5 +15,6 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=application/x-cd-image;application/x-raw-disk-image;
-Exec=/home/stef/bin/fuseisomount %w %f %d
+#edit to path of fuseisomount script
+Exec=/path/to/fuseisomount %w %f %d
 Name=Default profile
