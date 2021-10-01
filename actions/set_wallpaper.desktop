@@ -2,6 +2,7 @@
 Type=Action
 Name=Set as wallpaper
 Name[it]=Usa come sfondo
+Name[nl]=Instellen als achtergrond
 Icon=user-desktop
 Profiles=profile-zero;
 
