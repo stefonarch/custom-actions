@@ -3,6 +3,7 @@ Type=Action
 Name=Set as wallpaper
 Name[it]=Usa come sfondo
 Name[nl]=Instellen als achtergrond
+Name[ru]=Установить в качестве обоев
 Icon=user-desktop
 Profiles=profile-zero;
 
