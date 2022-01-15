@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Action
+Name=Calculate Hash
+Name[it]=Calcola hash
+Name[de]= Berechne Hash
+
+Icon=quickhash
+
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=text/*;audio/*;image/*;application/*;
+#edit to path of gethash script
+Exec=/path/to/gethash %f
+Name=Default profile

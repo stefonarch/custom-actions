@@ -35,6 +35,7 @@ Following actions are present:
 
 * Attach to email (for Thunderbird)
 * Remove (only for files - using rm → permanent, no confirm!)
+* Calculate hash
 
 ## Installation
 
