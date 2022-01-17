@@ -1,0 +1,7 @@
+#!/bin/bash
+/bin/cp "$1" "$1.$(date +%Y-%m-%d-%H%M).bak"
+
+res=$?
+if [[ $res != 0 ]] ; then
+    zenity --error --text="Backup failed $1 (not root?)"
+fi
