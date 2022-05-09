@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Action
+Name=Duplicate
+Icon=stock_mail-send-receive
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+SelectionCount==1
+MimeTypes=all/all
+Exec=bash -c "source ~/.profile && $MYSCRIPTS/pcmanfm-qt/duplicate_fso.sh d=%d b=%b w=%w x=%x"
+Name=Default profile
+
