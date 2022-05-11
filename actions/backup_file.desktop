@@ -7,6 +7,6 @@ Profiles=profile-zero;
 
 MimeTypes=MimeTypes=text/*;audio/*;image/*;application/*;video/*
 Exec=cp %f %f.~
-#With date and error messagge:
+#With date and error message:
 #Exec=/path/to/localcopy %f
 Name=Default profile
