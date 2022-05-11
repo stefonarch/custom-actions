@@ -3,7 +3,7 @@
 Custom actions are shown in the context menu (right click) for corresponding Mime-types.
 Following actions are present:
 
-![Screenshot](https://github.com/stefonarch/custom-actions/raw/master/Overview.png)
+![Screenshot](https://github.com/stefonarch/custom-actions/raw/master/demo.png)
 
 
 ### Text files
@@ -41,7 +41,8 @@ Following actions are present:
 
 ## Installation
 
-Copy the actions of your interest to  ~/.local/share/file-manager/actions
-and the eventually needed scripts to  ~/bin or another directory in your $PATH.
+Copy the actions of your interest to  `~/.local/share/file-manager/actions/`
+and the eventually needed scripts to  `~/bin or another directory in your $PATH`.
+Some actions depend on `zenity` for alerts.
 
-Refer to comments in the .desktop files.
+Refer also to comments in the `*.desktop` files.

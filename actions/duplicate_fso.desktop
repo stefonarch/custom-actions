@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Action
 Name=Duplicate
+Name[it]=Duplica
 Icon=stock_mail-send-receive
 Profiles=profile-zero;
 
@@ -9,4 +10,9 @@ SelectionCount==1
 MimeTypes=all/all
 Exec=bash -c "source ~/.profile && $MYSCRIPTS/pcmanfm-qt/duplicate_fso.sh d=%d b=%b w=%w x=%x"
 Name=Default profile
+
+#You need to have a $MYSCRIPTS variable loaded in your .profile, or edit the path to the script duplicate_fso.sh
+# The Script (sh file) will copy the file/folder in-place and add an incremental suffix between %w and %x (if any) (like '-copy1')
+
+
 
