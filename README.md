@@ -34,9 +34,10 @@ Following actions are present:
 ### All files:
 
 * Attach to email (for Thunderbird)
-* Remove (only for files - using rm → permanent, no confirm!)
+* Remove (only for files - using `rm` → permanent, no confirmation!)
 * Calculate hash
 * Create local backup
+* Duplicate file/folder
 
 ## Installation
 
