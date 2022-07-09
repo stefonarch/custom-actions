@@ -5,7 +5,7 @@ Icon=backup
 Profiles=profile-zero;
 [X-Action-Profile profile-zero]
 
-MimeTypes=MimeTypes=text/*;audio/*;image/*;application/*;video/*
+MimeTypes=text/*;audio/*;image/*;application/*;video/*
 Exec=cp %f %f.~
 #With date and error message:
 #Exec=/path/to/localcopy %f
