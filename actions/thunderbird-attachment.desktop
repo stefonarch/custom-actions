@@ -16,24 +16,28 @@ Name[cz]=Odeslat jako přílohu Thunderbirdem
 Icon=thunderbird
 #Icon=/usr/lib64/thunderbird-3.0.7/chrome/icons/default/default16.png
 
-# For 32 bit systems use: 
+# For 32 bit systems use:
 #Icon=/usr/lib/thunderbird/chrome/icons/default/default16.png
 
 Profiles=profile-zero;
 [X-Action-Profile profile-zero]
-# This one works for some systems (don't know exactly why). 
+# This one worked for some systems (don't know exactly why).
 # Exec=thunderbird -compose "attachment='file:///$(echo %F | sed 's/\\ \\//,file:\\/\\//g')'"
-#Exec=thunderbird -compose "attachment='file://$(echo %F | sed 's/\\ \\//,file:\\/\\//g')'"
- 
+# Exec=thunderbird -compose "attachment='file://$(echo %F | sed 's/\\ \\//,file:\\/\\//g')'"
+
 
 # This one worked well for a Gentoo user
 #Exec=thunderbird -compose \"attachment=\'file://`echo %F | sed \'s/\\\\ \\\\//,file:\\\\/\\\\/\\\\//g\'`\'\"
- 
-# This one was tested for Mandriva 2011 and LinuxMint Olivia:  
-#Exec=thunderbird -compose "attachment='$(echo %F | sed 's/\\ \\//,\\/\\//g')'"
-#This one works on arch 
-MimeTypes=text/*;audio/*;image/*;application/*;
-Exec=thunderbird -compose "attachment='file://%U'"
+
+# This one was tested for Mandriva 2011 and LinuxMint Olivia:
+# Exec=thunderbird -compose "attachment='$(echo %F | sed 's/\\ \\//,\\/\\//g')'"
+
+# This one works on arch and debian for all files (edit the path!)
+MimeTypes=all/allfiles;
+Exec=/home/user/bin/attach_multiple_files.sh %U
+
+# This works without script but only for single files:
+# Exec=thunderbird -compose "attachment='file://%U'"
 Name=Default profile
 
 
