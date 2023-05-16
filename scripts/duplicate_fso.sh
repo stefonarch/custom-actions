@@ -20,24 +20,32 @@ cd "$d"
 
 # Determine Extension
 if [[ -z "$x" ]] ; then
-  extn=$null  
+  extn=$null
 else
   extn=".$x"
 fi
 
+# Determine Base
+if [[ $b =~ ^\. ]] ; then
+  name=$b
+  extn=$null
+else
+  name=$w
+fi
+
 # Determine Copy Count
 n=1
-out="$w-copy$n$extn"
+out="$name-copy$n$extn"
 while [ -e "$out" ]; do
     n=$(( n + 1 ))
-    out="$w-copy$n$extn"
+    out="$name-copy$n$extn"
 done
 
 # Construct Command
 if [ -d "$b" ] ; then
-  command=(/usr/bin/rsync -ar "$b/" "$out")
+  command=(/usr/bin/rsync -alr "$b/" "$out")
 else
-  command=(/usr/bin/rsync -a "$b" "$out")
+  command=(/usr/bin/rsync -al "$b" "$out")
 fi
 
 # DEBUG: Display Command
@@ -49,5 +57,5 @@ fi
 # Handle Command Error
 res=$?
 if [[ $res != 0 ]] ; then
-  zenity --error --text="Duplication of $b failed (not root?)\n- base: $b\n- ext: $x\n- dir: $d" --width=600
+  zenity --error --text="Duplication of $b failed (not root?)\n- base: $b\n- base w/o ext: $w\n- ext: $x\n- dir: $d" --width=600
 fi
