@@ -9,6 +9,6 @@ Profiles=profile-zero;
 
 [X-Action-Profile profile-zero]
 MimeTypes=image/*;
-Exec=pcmanfm-qt -w %f
+Exec=pcmanfm-qt --wallpaper-mode=stretch -w %f
 Name=Default profile
 SelectionCount==1
