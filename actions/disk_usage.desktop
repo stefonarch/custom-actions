@@ -1,20 +1,22 @@
 [Desktop Entry]
 
 Type=Action
-Name=View disk usage
-Name[it]=Visualizza utilizzo disco
-Name[es]=Ver el uso del disco
-Name[de]=Datenträgernutzung anzeigen
-Name[pt]=Exibir uso do disco
-Name[fr]=Afficher l'utilisation du disque
-Name[nl]=Schijfgebruik tonen
-Name[pl]=Wyświetl użycie dysku
-Name[ru]=Посмотреть использование диска
-Name[cz]=Zobrazit využití disku
+Name=Check disk usage
+Name[it]=Controlla occupazione sul disco
+Name[es]=Compartir carpeta con Samba
+Name[de]=Ordner mit Samba teilen
+Name[pt]=Compartilhar pasta com o Samba
+Name[fr]=Partager le dossier avec Samba
+Name[nl]=Map delen met Samba
+Name[pl]=Udostępnij folder Sambie
+Name[ru]=Поделиться папкой с Samba
+Name[cz]=Sdílejte složku se Samba
 
 Icon=filelight
 
 Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
 
 SelectionCount==1
 
