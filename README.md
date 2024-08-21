@@ -26,6 +26,10 @@ Following actions are present:
 
 * Reduce size (ghostscript))
 
+### Archives
+
+* Install Package (arch linux)
+
 ### Folders:
 
 * Share with samba (foldershare script)

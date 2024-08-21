@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Action
+Icon=system-software-install
+Name=Install Package
+Comment=Install archlinux packages
+Name[it]=Installa pacchetto
+Name[de]=Installiere Paket
+MimeTypes=application/x-tar;application/zstd;application/x-zstd-compressed-tar
+Profiles=profile-zero;
+Terminal=true
+[X-Action-Profile profile-zero]
+Exec=qterminal -e 'yay -U %F'
+
