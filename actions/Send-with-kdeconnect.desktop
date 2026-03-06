@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Action
+Name=Send with kdeconnect
+Name[es]=Enviar con kdeconnect
+Icon=preferences-kde-connect
+Profiles=profile-zero;
+
+[X-Action-Profile profile-zero]
+MimeTypes=all/allfiles;
+Exec=kdeconnect-handler %f
+SelectionCount==1

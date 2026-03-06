@@ -42,6 +42,7 @@ Following actions are present:
 * Calculate hash
 * Create local backup
 * Duplicate file/folder
+* Send with kdeconnect
 
 ## Installation
 
